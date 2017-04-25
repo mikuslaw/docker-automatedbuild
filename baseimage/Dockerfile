@@ -1,1 +1,3 @@
 
+FROM debian
+CMD ["bash"]
