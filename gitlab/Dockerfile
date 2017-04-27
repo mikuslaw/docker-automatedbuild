@@ -5,6 +5,6 @@ RUN apt-get update -q \
     curl openssh-server ca-certificates postfix
     
 ADD ["https://packages.gitlab.com/gitlab/gitlab-ce/packages/debian/wheezy/gitlab-ce_9.1.1-ce.0_amd64.deb/download", "/temp/"]
-RUN ["sudo", "dpkg", "-i gitlab*"]
+RUN ["dpkg", "-i gitlab*"]
 
 CMD ["bash"]
