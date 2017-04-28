@@ -1,8 +1,8 @@
 # A base image build using Debian slim offical image.
-FROM debian:jessie-slim
+FROM debian:stretch
 
 # Set basic environment variables. Start with defining a linux terminal
-ENV TERM Linux
+ENV TERM xterm
 # Disable interactive apt-get
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
