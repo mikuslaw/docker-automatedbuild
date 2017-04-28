@@ -2,7 +2,7 @@
 FROM debian:jessie-slim
 
 # Set basic environment variables. Start with defining a linux terminal
-ENV TERM Linux
+ENV TERM xterm
 # Disable interactive apt-get
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
