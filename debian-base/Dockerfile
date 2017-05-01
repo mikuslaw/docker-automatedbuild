@@ -1,5 +1,5 @@
 # A base image build using Debian slim offical image.
-FROM debian:jessie
+FROM debian:wheezy
 
 # Set basic environment variables. Start with defining a linux terminal
 ENV TERM xterm
