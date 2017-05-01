@@ -1,5 +1,5 @@
 # A base image build using Debian slim offical image.
-FROM debian:7
+FROM debian:8.7
 
 # Set basic environment variables. Start with defining a linux terminal
 ENV TERM xterm
